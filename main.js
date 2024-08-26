@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', function() {
     // List of repositories to include (only those you want to show)
     const selectedRepos = [
@@ -32,3 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching GitHub repositories:', error));
 });
+*/
