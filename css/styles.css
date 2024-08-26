@@ -44,3 +44,28 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.tableauPlaceholder {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tableauViz {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .tableauViz {
+        width: 800px;  /* Adjust width for medium screens */
+        height: 500px;  /* Adjust height for medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .tableauViz {
+        width: 100%;  /* Full width for small screens */
+        height: auto;  /* Auto height based on content */
+    }
+}
+
