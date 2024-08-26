@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #eb5e07;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -27,7 +27,7 @@ section {
     margin: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(222, 80, 4, 0.1);
 }
 
 .repo {
