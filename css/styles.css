@@ -84,13 +84,6 @@ nav ul li a:hover {
 
 /* Additional responsive design adjustments */
 
-@media (max-width: 800px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
 .timeline {
     position: relative;
     max-width: 800px;
@@ -164,7 +157,12 @@ nav ul li a:hover {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
     .timeline-event {
         width: 100%;
         padding-left: 70px;
