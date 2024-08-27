@@ -185,3 +185,45 @@ nav ul li a:hover {
     opacity: 1; /* Fade in */
     transform: translateY(0); /* Move to original position */
 }
+
+.skillset {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skillset li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.skillset li i {
+    color: #eb5e07;
+    margin-right: 8px;
+}
+
+.interests {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.interests i {
+    color: #eb5e07;
+    margin-right: 5px;
+}
+
+/* Additional CSS to align with your timeline styling */
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #eb5e07;
+    margin-bottom: 10px;
+}
+
+#overview {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
