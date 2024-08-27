@@ -12,10 +12,10 @@ header {
     text-align: center;
 }
 
-
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -23,50 +23,60 @@ nav ul li {
     margin: 0 10px;
 }
 
-section {
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d44e05;
+}
+
+.tab-content {
+    display: none;
     padding: 20px;
     margin: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(222, 80, 4, 0.1);
+    animation: fadeIn 0.5s ease;
 }
 
-.repo {
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profile-picture {
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.tableauViz {
-    margin-bottom: 20px;
-}
-
-footer {
+.download-btn {
     background-color: #eb5e07;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.tableauPlaceholder {
-    max-width: 100%;
-    margin: 0 auto;
+.download-btn:hover {
+    background-color: #d44e05;
 }
 
-.tableauViz {
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 1200px) {
-    .tableauViz {
-        width: 800px;  /* Adjust width for medium screens */
-        height: 500px;  /* Adjust height for medium screens */
-    }
-}
+/* Additional responsive design adjustments */
 
 @media (max-width: 800px) {
-    .tableauViz {
-        width: 100%;  /* Full width for small screens */
-        height: auto;  /* Auto height based on content */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 }
-
