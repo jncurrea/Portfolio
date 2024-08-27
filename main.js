@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Timeline
     const timelineData = [
-        { title: 'Master of Science, Business Analytics', description: 'The University of Texas at Austin', date: 'May 2025' },
-        { title: 'Bootcamp, Data Analysis & Visualization', description: 'The University of Texas at Austin - McCombs School of Business', date: 'July 2022' },
-        { title: 'Bachelor of Science, Mathematics & Information Technology', description: 'The University of Texas at Tyler (Honors Program)', date: 'December 2021' },
+        { title: 'Master of Science, Business Analytics', description: 'The University of Texas at Austin', date: 'July 2024 - May 2025' },
         { title: 'Sr. Data Analyst, Digital Channels', description: 'Banco de Bogota - Bogota, Colombia', date: 'Oct 2022 - Jul 2024' },
         { title: 'Jr. Data Analyst, Supply Chain & Warehouse Operations', description: 'Merqueo - Bogota, Colombia', date: 'Mar 2022 - Oct 2022' },
+        { title: 'Bootcamp, Data Analysis & Visualization', description: 'The University of Texas at Austin - McCombs School of Business', date: 'December 2021 - July 2022' },
         { title: 'Business Intelligence Analyst', description: 'Puntos Colombia - Bogota, Colombia', date: 'June 2021 - Aug 2021' },
-        { title: 'Business Intelligence Analyst', description: 'SoyYo, Servicios de Identidad Digital - Bogota, Colombia', date: 'June 2020 - Aug 2020' }
+        { title: 'Business Intelligence Analyst', description: 'SoyYo, Servicios de Identidad Digital - Bogota, Colombia', date: 'June 2020 - Aug 2020' },
+        { title: 'Bachelor of Science, Mathematics & Information Technology', description: 'The University of Texas at Tyler (Honors Program)', date: 'August 2017 - December 2021' }
     ];
 
     const timelineContainer = document.querySelector('.timeline');
@@ -56,6 +56,26 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         timelineContainer.innerHTML += eventHTML;
+    });
+
+    // Intersection Observer for triggering animations when in view
+    const timelineEvents = document.querySelectorAll('.timeline-event');
+
+    const observerOptions = {
+        threshold: 0.3 // Trigger when 30% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Stop observing once the animation has been triggered
+            }
+        });
+    }, observerOptions);
+
+    timelineEvents.forEach(event => {
+        observer.observe(event);
     });
 
     // Show the Overview tab by default
