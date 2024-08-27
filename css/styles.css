@@ -82,13 +82,6 @@ nav ul li a:hover {
     height: auto;
 }
 
-@media (max-width: 1200px) {
-    .tableauViz {
-        width: 800px;  /* Adjust width for medium screens */
-        height: 500px;  /* Adjust height for medium screens */
-    }
-}
-
 /* Additional responsive design adjustments */
 
 @media (max-width: 800px) {
