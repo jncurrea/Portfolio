@@ -75,11 +75,14 @@ nav ul li a:hover {
 .tableauPlaceholder {
     max-width: 100%;
     margin: 0 auto;
+    display: block;
+    overflow: hidden;
 }
 
 .tableauViz {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* Additional responsive design adjustments */
@@ -161,6 +164,11 @@ nav ul li a:hover {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .tableauViz {
+        width: 100%;  /* Full width for smaller screens */
+        height: auto; /* Adjust height based on content */
     }
 
     .timeline-event {
