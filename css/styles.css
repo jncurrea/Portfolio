@@ -72,6 +72,23 @@ nav ul li a:hover {
     background-color: #d44e05;
 }
 
+.tableauPlaceholder {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tableauViz {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .tableauViz {
+        width: 800px;  /* Adjust width for medium screens */
+        height: 500px;  /* Adjust height for medium screens */
+    }
+}
+
 /* Additional responsive design adjustments */
 
 @media (max-width: 800px) {
