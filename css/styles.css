@@ -332,26 +332,26 @@ h3 {
 
     .timeline2::after {
         left: 31px;
-      }
+    }
     
-      .container2 {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-      }
-    
-      .container2::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-      }
-    
-      .left2::after, .right::after {
-        left: 15px;
-      }
-    
-      .right2 {
-        left: 0%;
-      }
+    .container2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+    .container2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+
+    .left2::after, .right::after {
+    left: 15px;
+    }
+
+    .right2 {
+    left: 0%;
+    }
 }
