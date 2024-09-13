@@ -244,7 +244,7 @@ h3 {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffd86e; /* Updated background color */
+    background-color: #f9f9f9; /* Updated background color */
   }
   
   /* Timeline2 Styles */
@@ -265,14 +265,14 @@ h3 {
     margin-left: -3px;
   }
   
-  .container {
+  .container2 {
     padding: 10px 50px;
     position: relative;
     background-color: inherit;
     width: 50%;
   }
   
-  .container::after {
+  .container2::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -285,15 +285,15 @@ h3 {
     z-index: 1;
   }
   
-  .left {
+  .left2 {
     left: 0;
   }
   
-  .right {
+  .right2 {
     left: 50%;
   }
   
-  .left::before {
+  .left2::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -306,7 +306,7 @@ h3 {
     border-color: transparent transparent transparent white;
   }
   
-  .right::before {
+  .right2::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -319,11 +319,11 @@ h3 {
     border-color: transparent white transparent transparent;
   }
   
-  .right::after {
+  .right2::after {
     left: -16px;
   }
   
-  .content {
+  .content2 {
     padding: 20px 30px;
     background-color: white;
     position: relative;
@@ -336,24 +336,24 @@ h3 {
       left: 31px;
     }
   
-    .container {
+    .container2 {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
     }
   
-    .container::before {
+    .container2::before {
       left: 60px;
       border: medium solid white;
       border-width: 10px 10px 10px 0;
       border-color: transparent white transparent transparent;
     }
   
-    .left::after, .right::after {
+    .left2::after, .right::after {
       left: 15px;
     }
   
-    .right {
+    .right2 {
       left: 0%;
     }
   }
