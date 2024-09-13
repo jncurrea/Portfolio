@@ -160,31 +160,6 @@ nav ul li a:hover {
     display: block;
 }
 
-@media screen and (max-width: 800px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .tableauViz {
-        width: 100%;  /* Full width for smaller screens */
-        height: auto; /* Adjust height based on content */
-    }
-
-    .timeline-event {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .timeline-event:nth-child(even) {
-        left: 0%;
-    }
-
-    .timeline-event::after {
-        left: 60px;
-    }
-}
 
 /* New styles for animation */
 .timeline-event.in-view {
@@ -329,32 +304,54 @@ h3 {
     position: relative;
     border-radius: 6px;
   }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 600px) {
-    .timeline2::after {
-      left: 31px;
-    }
-  
-    .container2 {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-    .container2::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-    .left2::after, .right::after {
-      left: 15px;
-    }
-  
-    .right2 {
-      left: 0%;
-    }
-  }
 
+  @media screen and (max-width: 800px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .tableauViz {
+        width: 100%;  /* Full width for smaller screens */
+        height: auto; /* Adjust height based on content */
+    }
+
+    .timeline-event {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-event:nth-child(even) {
+        left: 0%;
+    }
+
+    .timeline-event::after {
+        left: 60px;
+    }
+
+    .timeline2::after {
+        left: 31px;
+      }
+    
+      .container2 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+    
+      .container2::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+      .left2::after, .right::after {
+        left: 15px;
+      }
+    
+      .right2 {
+        left: 0%;
+      }
+}
