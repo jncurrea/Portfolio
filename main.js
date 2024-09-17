@@ -41,9 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
     vizElement2.style.width = '1904px';
     vizElement2.style.height = '1064px';
 
-    // Ensure the width and height are not overridden by any parent container or responsive logic
-    vizElement2.style.maxWidth = 'none';
-    vizElement2.style.maxHeight = 'none';
+    // Ensure overflow is set to auto for scrollability
+    divElement2.style.overflow = 'auto';
+    divElement2.style.maxWidth = '100%';
+    divElement2.style.maxHeight = '100vh';
     var scriptElement2 = document.createElement('script');
     scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
