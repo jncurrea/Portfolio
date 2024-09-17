@@ -16,21 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Load Tableau projects
-    var vizWidth = Math.min(window.innerWidth * 0.9, 800); // 90% of the window width, but no more than 800
-    var vizHeight = vizWidth * 0.6; // Aspect ratio (adjust as needed)
+    //var vizWidth = Math.min(window.innerWidth * 0.9, 800); // 90% of the window width, but no more than 800
+    //var vizHeight = vizWidth * 0.6; // Aspect ratio (adjust as needed)
 
     var divElement1 = document.getElementById('viz1724702839630');
     var vizElement1 = divElement1.getElementsByTagName('object')[0];
-    vizElement1.style.width = vizWidth + 'px';
-    vizElement1.style.height = vizHeight + 'px';
+    vizElement1.style.width='1016px';vizElement1.style.height='991px';
     var scriptElement1 = document.createElement('script');
     scriptElement1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement1.parentNode.insertBefore(scriptElement1, vizElement1);
 
     var divElement2 = document.getElementById('viz1724703197137');
     var vizElement2 = divElement2.getElementsByTagName('object')[0];
-    vizElement2.style.width = vizWidth + 'px';
-    vizElement2.style.height = vizHeight + 'px';
+    vizElement2.style.width='1016px';vizElement2.style.height='991px';
     var scriptElement2 = document.createElement('script');
     scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
