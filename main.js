@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var divElement2 = document.getElementById('viz1724703197137');
     var vizElement2 = divElement2.getElementsByTagName('object')[0];
     // Force fixed width and height for the visualization
-    vizElement2.style.width = '1920px';
-    vizElement2.style.height = '1080px';
+    vizElement2.style.width = '1904px';
+    vizElement2.style.height = '1064px';
 
     // Ensure the width and height are not overridden by any parent container or responsive logic
     vizElement2.style.maxWidth = 'none';
