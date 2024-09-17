@@ -37,21 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var divElement2 = document.getElementById('viz1724703197137');
     var vizElement2 = divElement2.getElementsByTagName('object')[0];
-    // Set dimensions explicitly to control the display size
-    vizElement2.style.width = '1000px';
-    vizElement2.style.height = '750px';
+    // Force fixed width and height for the visualization
+    vizElement2.style.width = '1016px';
+    vizElement2.style.height = '991px';
 
-    // Add logic to adjust the dimensions if the container is too small or large
-    if (divElement2.offsetWidth > 1200) {
-        vizElement2.style.width = '100%';
-        vizElement2.style.height = '900px';
-    } else if (divElement2.offsetWidth > 800) {
-        vizElement2.style.width = '100%';
-        vizElement2.style.height = '750px';
-    } else {
-        vizElement2.style.width = '100%';
-        vizElement2.style.height = '600px';
-    }
+    // Ensure the width and height are not overridden by any parent container or responsive logic
+    vizElement2.style.maxWidth = 'none';
+    vizElement2.style.maxHeight = 'none';
     var scriptElement2 = document.createElement('script');
     scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
