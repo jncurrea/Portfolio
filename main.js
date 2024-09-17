@@ -35,6 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
     scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
 
+    var divElement = document.getElementById('viz1726597196721');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='1016px';vizElement.style.height='991px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
     // Intersection Observer for triggering animations when in view
     const timelineEvents = document.querySelectorAll('.timeline2 .container2');
 
