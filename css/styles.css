@@ -1,15 +1,28 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #f4f4f4, #e9e9e9);
+    color: #333;
 }
 
+/* Header Section */
 header {
-    background-color: #eb5e07;
+    background: linear-gradient(135deg, #eb5e07, #d44e05);
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -20,81 +33,62 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
-    background-color: #d44e05;
+    background: #ff8c42;
+    transform: scale(1.1);
 }
 
+/* Profile Picture */
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Content Sections */
 .tab-content {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     display: none;
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(222, 80, 4, 0.1);
-    animation: fadeIn 0.5s ease;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .tab-content.active {
     display: block;
 }
 
+/* Fade-in Animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-.profile-picture {
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.download-btn {
-    background-color: #eb5e07;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.download-btn:hover {
-    background-color: #d44e05;
-}
-
-.tableauPlaceholder {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-    overflow: hidden;
-}
-
-.tableauViz {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Additional responsive design adjustments */
-
-.timeline {
+/* Experience Timeline */
+.timeline2 {
     position: relative;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.timeline::after {
+.timeline2::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -105,30 +99,19 @@ nav ul li a:hover {
     margin-left: -3px;
 }
 
-.timeline-event {
-    padding: 10px 40px;
+.container2 {
+    padding: 10px 50px;
     position: relative;
     background-color: inherit;
     width: 50%;
-    opacity: 0; /* Start hidden for animation */
-    transform: translateY(50px); /* Start slightly below */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.timeline-event:nth-child(odd) {
-    left: 0;
-}
-
-.timeline-event:nth-child(even) {
-    left: 50%;
-}
-
-.timeline-event::after {
+.container2::after {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
+    width: 25px;
+    height: 25px;
+    right: -17px;
     background-color: white;
     border: 4px solid #eb5e07;
     top: 15px;
@@ -136,139 +119,15 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.timeline-event:nth-child(even)::after {
-    left: -10px;
-}
-
-.timeline-content {
-    padding: 20px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content h3 {
-    margin-top: 0;
-    font-size: 1.25em;
-}
-
-.timeline-content .date {
-    font-size: 0.85em;
-    color: gray;
-    margin-top: 10px;
-    display: block;
-}
-
-
-/* New styles for animation */
-.timeline-event.in-view {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Move to original position */
-}
-
-.skillset {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.skillset li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-.skillset li i {
-    color: #eb5e07;
-    margin-right: 8px;
-}
-
-.interests {
-    font-size: 1.1em;
-    margin-top: 10px;
-}
-
-.interests i {
-    color: #eb5e07;
-    margin-right: 5px;
-}
-
-/* Additional CSS to align with your timeline styling */
-h3 {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: #eb5e07;
-    margin-bottom: 10px;
-}
-
-#overview {
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-
-/* Timeline2 */
-/* Global Styles */
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9; /* Updated background color */
-  }
-  
-  /* Timeline2 Styles */
-  .timeline2 {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .timeline2::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #eb5e07; /* Match with the primary color */
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  .container2 {
-    padding: 10px 50px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  .container2::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #eb5e07; /* Match with the primary color */
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .left2 {
+.left2 {
     left: 0;
-  }
-  
-  .right2 {
+}
+
+.right2 {
     left: 50%;
-  }
-  
-  .left2::before {
+}
+
+.left2::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -279,9 +138,9 @@ h3 {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  .right2::before {
+}
+
+.right2::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -292,66 +151,90 @@ h3 {
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-  }
-  
-  .right2::after {
+}
+
+.right2::after {
     left: -16px;
-  }
-  
-  .content2 {
+}
+
+.content2 {
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
-  }
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  @media screen and (max-width: 800px) {
+.content2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Download Resume Button */
+.download-btn {
+    background: linear-gradient(90deg, #eb5e07, #ff8c42);
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.download-btn i {
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ff8c42;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
     nav ul li {
         display: block;
         margin: 10px 0;
     }
 
-    .tableauViz {
-        width: 100%;  /* Full width for smaller screens */
-        height: auto; /* Adjust height based on content */
+    .timeline2::after {
+        left: 31px;
     }
 
-    .timeline-event {
+    .container2 {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
-    .timeline-event:nth-child(even) {
-        left: 0%;
-    }
-
-    .timeline-event::after {
-        left: 60px;
-    }
-
-    .timeline2::after {
-        left: 31px;
-    }
-    
-    .container2 {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
-
     .container2::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
     }
 
     .left2::after, .right::after {
-    left: 15px;
+        left: 15px;
     }
 
     .right2 {
-    left: 0%;
+        left: 0%;
     }
 }
