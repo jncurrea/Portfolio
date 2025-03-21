@@ -51,8 +51,8 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-picture {
-    width: 65px;  /* Slightly bigger than before */
-    height: 65px; /* Keeps it proportional */
+    width: 120px;  /* Slightly bigger than before */
+    height: 120px; /* Keeps it proportional */
     border-radius: 50%;
     margin-bottom: 20px;
     display: block;
