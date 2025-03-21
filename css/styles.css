@@ -51,15 +51,8 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-picture {
-    width: 50px; /* Ensures the image doesn't become too large */
-    height: 50px; /* Keeps it proportional */
-    border-radius: 50%; /* Keeps the circular shape */
-    object-fit: cover; /* Ensures the image maintains aspect ratio */
-    margin-bottom: 20px; /* Keeps spacing below */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for better appearance */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 
