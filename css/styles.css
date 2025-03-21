@@ -51,14 +51,17 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-picture {
-    width: 150px; /* Set a max width */
-    height: 150px; /* Set a max height */
-    object-fit: cover; /* Ensures image maintains aspect ratio */
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 120px; /* Ensures the image doesn't become too large */
+    height: 120px; /* Keeps it proportional */
+    border-radius: 50%; /* Keeps the circular shape */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    margin-bottom: 20px; /* Keeps spacing below */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for better appearance */
     display: block;
-    margin: 0 auto 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 
 /* Content Sections */
