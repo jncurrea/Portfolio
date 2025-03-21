@@ -51,13 +51,15 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-picture {
-    width: 160px;
-    height: 160px;
+    width: 150px; /* Set a max width */
+    height: 150px; /* Set a max height */
+    object-fit: cover; /* Ensures image maintains aspect ratio */
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: block;
     margin: 0 auto 20px;
 }
+
 
 /* Content Sections */
 .tab-content {
@@ -207,7 +209,12 @@ footer a:hover {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+    .profile-picture {
+        width: 120px; 
+        height: 120px;
+    }
+
     nav ul li {
         display: block;
         margin: 10px 0;
