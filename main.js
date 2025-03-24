@@ -9,16 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ✅ Typing Effect for "Who am I?"
     if (typingTextElement) {  // Ensures the element exists before running the script
-        const text = `I'm Jose Nicolas Currea, born and raised in Bogota, Colombia. Grew up playing tennis and soccer with one clear goal: become a pro in either of the two.<br><br>
-        After a few years, my goals changed and I started thinking about going to the US for college. In 2017, this dream became a reality, and I got a scholarship to play DII tennis at The University of Texas at Tyler.<br><br>
-        In Tyler, I ended up pursuing a Bachelor of Science in Mathematics & Information Technology, where I discovered my passion for data analytics and data science.<br><br>
-        In a more professional context, I am a data enthusiast with a strong foundation in Mathematics, Information Technology, and Business Analytics. 
-        I've developed my skills across industries like banking and online retail, where I've built predictive models, optimized processes, and created clear, actionable insights that drive real business outcomes.<br><br>
-        I am a great team player (both on and off the tennis court) and work well in both team and individual settings.
-        I'm passionate about using data to solve problems and thrive in roles where I can bridge the gap between technical details and strategic decisions.<br><br>
-        Looking ahead, I’m excited to continue growing in advanced analytics and leadership, using data to make a meaningful impact in a forward-thinking organization.
-        My ultimate goal is to keep on climbing the ladder of success in the data field and get to work with my two passions: data and sports.`;
-
+        const text = `Hi, I'm Jose Nicolas Currea — born and raised in Bogotá, Colombia. 🇨🇴
+                    I grew up playing tennis and soccer, with one goal: becoming a pro athlete. 🎾⚽
+                    Over time, my goals evolved. In 2017, I moved to the U.S. on a tennis scholarship at UT Tyler. 🧳
+                    There, I earned a B.S. in Mathematics & Information Technology — and found my passion for data. 💡📊
+                    Since then, I’ve worked in banking and online retail — building models, optimizing processes, and delivering data-driven insights. 📈💼
+                    I’m a team player (on and off the court), and I love solving real problems where tech meets strategy. 🧠🤝
+                    Now, I’m pursuing an MS in Business Analytics at UT Austin, growing in leadership and advanced analytics. 🎓🔍
+                    My mission? To make an impact at the intersection of **data and sports** — my two biggest passions. 🚀🏟️`;
         let index = 0;
         const speed = 20;
 
