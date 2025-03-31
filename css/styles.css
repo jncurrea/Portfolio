@@ -421,7 +421,16 @@ footer a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
-  }  
+  }
+  .text-container {
+    position: relative;
+    z-index: 1;            /* Make sure text is above the background */
+    max-width: 600px;      /* Adjust width as needed */
+    margin: 0 auto;        /* Center the text container */
+    padding: 15px 20px;    /* Adjust padding to your liking */
+    background: rgba(255,255,255,0.8); /* Optional: a semi-transparent white background for better readability */
+    border-radius: 6px;    /* Rounded corners for the text container */
+  }    
   
   
   /* Light background image "watermark" */
