@@ -394,15 +394,18 @@ footer a:hover {
   }
   
   .experience-card {
-    min-width: 100%; /* Occupies the full slider width */
+    min-width: 100%;
+    min-height: 250px; /* Ensures enough vertical space */
     box-sizing: border-box;
     padding: 20px;
-    margin: 0 10px;  /* Some horizontal spacing */
+    margin: 0 10px;
     border-radius: 8px;
-    position: relative;
-    background-color: #fff; 
+    background-color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden; /* So background doesn’t spill out */
   }
+  
   
   /* Light background image "watermark" */
   .card-bg {
