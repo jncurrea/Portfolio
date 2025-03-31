@@ -411,17 +411,17 @@ footer a:hover {
   }
   
   .experience-card {
-    min-width: 100%;
-    min-height: 300px; /* Ensures enough vertical space */
+    flex: 0 0 100%;  /* Each card occupies 100% of the container width */
+    min-height: 300px;
     box-sizing: border-box;
     padding: 20px;
-    margin: 0 10px;
+    margin: 0;       /* Remove external horizontal margins */
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     position: relative;
-    overflow: hidden; /* So background doesn’t spill out */
-  }
+    overflow: hidden;
+  }  
   
   
   /* Light background image "watermark" */
