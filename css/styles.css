@@ -362,6 +362,10 @@ footer a:hover {
   }
   
   .prev-btn, .next-btn {
+    position: absolute;      /* Absolutely position the arrows */
+    top: 50%;                /* Vertically center */
+    transform: translateY(-50%);  /* Adjust for true center */
+    z-index: 999;            /* Ensure arrows are above other elements */
     background: none;
     border: none;
     font-size: 2rem;
@@ -369,7 +373,15 @@ footer a:hover {
     cursor: pointer;
     padding: 0 10px;
     transition: color 0.3s;
-  }
+}
+
+.prev-btn {
+    left: 10px;  /* Position the previous arrow on the left */
+}
+
+.next-btn {
+    right: 10px;  /* Position the next arrow on the right */
+}
   
   .prev-btn:hover, .next-btn:hover {
     color: #eb5e07;
