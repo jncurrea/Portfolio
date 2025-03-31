@@ -348,6 +348,80 @@ footer a:hover {
     opacity: 1;
   }
 
+  /**************************************
+ * Experience Carousel
+ **************************************/
+.experience-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Adjust as desired */
+    margin: 0 auto;   /* Center the carousel */
+    position: relative;
+    overflow: hidden; /* Hide overflowing cards */
+  }
+  
+  .prev-btn, .next-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    color: #eb5e07;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* By default, show the first card (index = 0) */
+  }
+  
+  .experience-card {
+    min-width: 100%; /* Occupies the full slider width */
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 10px;  /* Some horizontal spacing */
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Light background image "watermark" */
+  .card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;       /* Fill container */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;                /* Make it very light */
+    border-radius: 8px;
+    z-index: 0;                   /* Place behind text */
+  }
+  
+  /* Position text above background */
+  .experience-card h4,
+  .experience-card h5,
+  .experience-card p {
+    position: relative;
+    z-index: 1; /* Ensure text is above .card-bg */
+    margin: 10px 0;
+  }
+  
+  .experience-card .date {
+    font-weight: bold;
+    color: #666;
+  }
+  
+
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     .profile-picture {

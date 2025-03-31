@@ -64,5 +64,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
         timelineEvents.forEach(event => observer.observe(event));
     }
+
+    // ✅ Experience Slider (Carousel) Code
+    // Make sure your HTML for the Experience section uses .experience-slider, .cards-wrapper, etc.
+    const wrapper = document.querySelector('.cards-wrapper');
+    const cards = document.querySelectorAll('.experience-card');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+  
+    let currentIndex = 0;
+    const totalCards = cards.length;
+  
+    function showCard(index) {
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
+    }
+  
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      showCard(currentIndex);
+    });
+  
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalCards;
+      showCard(currentIndex);
+    });
+  
+    showCard(currentIndex); // Show the first card initially
 });
 
