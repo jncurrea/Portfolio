@@ -412,7 +412,7 @@ footer a:hover {
   
   .experience-card {
     min-width: 100%;
-    min-height: 250px; /* Ensures enough vertical space */
+    min-height: 300px; /* Ensures enough vertical space */
     box-sizing: border-box;
     padding: 20px;
     margin: 0 10px;
